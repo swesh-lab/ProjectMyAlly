@@ -1,12 +1,12 @@
 # Project-My-Ally
 
-**DESCRIPTION**
-
-_My Ally_ is the AI-powered virtual friend which helps you know your future and takes away the intimidation and awkwardness of interacting with real people. It will practice and face scenarios you are likely to encounter in the best way possible. This platform also performs a wide range of assistive features.
-
 **PROBLEM DEFINITION**
 
 Across cultures and history, we discover individuals wanting to grasp their future. People are continually attempting to seek out their own life to know how badly things can go and to decide how much work they need to put into it to change unusual things into satisfying outcomes in the future.
+
+**DESCRIPTION**
+
+_My Ally_ is the AI-powered virtual friend which helps you know your future and takes away the intimidation and awkwardness of interacting with real people. It will practice and face scenarios you are likely to encounter in the best way possible. This platform also performs a wide range of assistive features.
 
 **PROJECT PERSPECTIVES**
 
