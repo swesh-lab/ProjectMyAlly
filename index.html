@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Ally Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython_stdlib.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/css">
+        .content {
+            margin-top: 56px;
+        }
+    </script>
+
+</head>
+<body onload="brython()">
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">MY ALLY: Testing Assistive Features and Prognostication</a>
+</nav>
+
+<div class="content">
+<div class="wrap">
+    <div class="left container">
+                <div class="row justify-content-center"></div>
+    </div>
+    <div class="right">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="scroll">
+                    <div id="chatbox">
+                        <p class="allyText"><span>My Ally Demo >> </span></p>
+                    </div>
+                    </div>
+                    <div id="userInput">
+                        <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message...">
+                        <input id="buttonInput" class="btn btn-dark form-control" type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                    function getResponse() {
+                        let userInput = $("#textInput").val();
+                        let userHtml = '<p class="userInput"><span>' + userInput + '</span></p>';
+                        $("#textInput").val("");
+                        $("#chatbox").append(userHtml);
+                        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+                        $.get("/get", { msg: userInput }).done(function(data) {
+                        var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+                        $("#chatbox").append(botHtml);
+                        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+                        });
+                    }
+                    $("#textInput").keypress(function(e) {
+                    // enter key press
+                        if(e.which == 13) {
+                            getResponse();
+                        }
+                    });
+                    $("#buttonInput").click(function() {
+                        getResponse();
+                    });
+                </script>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
