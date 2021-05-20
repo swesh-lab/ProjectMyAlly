@@ -56,27 +56,28 @@ body{
 .left {
     flex-basis: 50%;
     width: 50%;
-	height: 92vh;
-	vertical-align: middle;
-	background-image: url('https://i.postimg.cc/HxmLJnMV/model.gif');
-	background-color: #776889;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+    height: 92vh;
+    vertical-align: middle;
+    background-image: url('https://i.postimg.cc/HxmLJnMV/model.gif');
+    background-color: #776889;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: auto 100%;
 }
 
 .right {
-	color: #7c7c7d;
-	width: 50%;
- 	flex-basis: 50%;
- 	height: 590px;
- 	vertical-align: middle;
+    color: #7c7c7d;
+    background-image: url(https://i.postimg.cc/t4mhZYhq/shine.gif);
+    width: 50%;
+    flex-basis: 50%;
+    height: 590px;
+    vertical-align: middle;
     word-wrap: break-word;
 }
 
 .scroll {
-	overflow: auto;
+    overflow: auto;
     min-width: 200px;
     height: 87vh;
 
