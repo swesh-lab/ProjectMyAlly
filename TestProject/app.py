@@ -15,16 +15,18 @@ def login():
         username = request.form["nm"]
         date_month = request.form["dm"]
         session["username"] = username
-        return render_template("index.html", result=username)
+        session["date_month"] = date_month
+        return render_template("index.html", username=username, date_month=date_month)
     else:
         return render_template("login.html")
 
 
 @app.route('/')
 def index():
-    if "username" in session:
+    if "date_month" in session:
         username = session["username"]
-        return render_template("index.html", result=username)
+        date_month = session["date_month"]
+        return render_template("index.html", username=username, date_month=date_month)
     else:
         return redirect(url_for("login"))
 
