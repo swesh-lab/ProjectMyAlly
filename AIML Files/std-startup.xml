@@ -1,0 +1,68 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML B</pattern>
+
+        <template>
+			<learn>AIML Files/ai.aiml</learn>
+			<learn>AIML Files/astrology.aiml</learn>
+			<learn>AIML Files/atomic.aiml</learn>
+			<learn>AIML Files/biography.aiml</learn>
+			<learn>AIML Files/computers.aiml</learn>
+			<learn>AIML Files/continuation.aiml</learn>
+			<learn>AIML Files/date.aiml</learn>
+			<learn>AIML Files/default.aiml</learn>
+			<learn>AIML Files/emotion.aiml</learn>
+			<learn>AIML Files/food.aiml</learn>
+			<learn>AIML Files/foretell_assist.aiml</learn>
+			<learn>AIML Files/geography.aiml</learn>
+			<learn>AIML Files/gossip.aiml</learn>
+			<learn>AIML Files/history.aiml</learn>
+			<learn>AIML Files/imponderables.aiml</learn>
+			<learn>AIML Files/inquiry.aiml</learn>
+			<learn>AIML Files/interjection.aiml</learn>
+			<learn>AIML Files/iu.aiml</learn>
+			<learn>AIML Files/knowledge.aiml</learn>
+			<learn>AIML Files/literature.aiml</learn>
+			<learn>AIML Files/money.aiml</learn>
+			<learn>AIML Files/movies.aiml</learn>
+			<learn>AIML Files/mp0.aiml</learn>
+			<learn>AIML Files/mp1.aiml</learn>
+			<learn>AIML Files/mp2.aiml</learn>
+			<learn>AIML Files/mp3.aiml</learn>
+			<learn>AIML Files/mp4.aiml</learn>
+			<learn>AIML Files/mp5.aiml</learn>
+			<learn>AIML Files/mp6.aiml</learn>
+			<learn>AIML Files/news_headlines_assist.aiml</learn>
+			<learn>AIML Files/numbers.aiml</learn>
+			<learn>AIML Files/open_calculator_assist.aiml</learn>
+			<learn>AIML Files/open_google_assist.aiml</learn>
+			<learn>AIML Files/open_notepad_assist.aiml</learn>
+			<learn>AIML Files/open_youtube_assist.aiml</learn>
+	    	<learn>AIML Files/personality.aiml</learn>
+            <learn>AIML Files/pickup.aiml</learn>
+            <learn>AIML Files/play_music_assist.aiml</learn>
+            <learn>AIML Files/politics.aiml</learn>
+            <learn>AIML Files/primeminister.aiml</learn>
+            <learn>AIML Files/psychology.aiml</learn>
+            <learn>AIML Files/quotes_assist.aiml</learn>
+            <learn>AIML Files/reduction.names.aiml</learn>
+            <learn>AIML Files/reduction0.safe.aiml</learn>
+            <learn>AIML Files/reduction1.safe.aiml</learn>
+            <learn>AIML Files/reduction2.safe.aiml</learn>
+            <learn>AIML Files/reduction3.safe.aiml</learn>
+            <learn>AIML Files/reduction4.safe.aiml</learn>
+            <learn>AIML Files/reductions-update.aiml</learn>
+            <learn>AIML Files/religion.aiml</learn>
+	    	<learn>AIML Files/reminder_chat.aiml</learn>
+            <learn>AIML Files/salutations.aiml</learn>
+            <learn>AIML Files/science.aiml</learn>
+	    	<learn>AIML Files/search_queries_and_videos_assist.aiml</learn>
+            <learn>AIML Files/sports.aiml</learn>
+            <learn>AIML Files/stack.aiml</learn>
+            <learn>AIML Files/stories.aiml</learn>
+	    	<learn>AIML Files/time_assist.aiml</learn>
+			<learn>AIML Files/wikipedia_assist.aiml</learn>
+			<learn>AIML Files/word_meaning_definition_assist.aiml</learn>
+        </template>
+    </category>
+</aiml>

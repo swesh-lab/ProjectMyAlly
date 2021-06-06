@@ -1,0 +1,23 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>OPEN NOTEPAD</pattern>
+	<template><set name='assist'>open notepad</set></template>
+    </category>
+    <category>
+	<pattern>LAUNCH NOTEPAD</pattern>
+	<template><srai>OPEN NOTEPAD</srai></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLEASE OPEN NOTEPAD</pattern>
+	<template><srai>OPEN NOTEPAD</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU PLEASE OPEN NOTEPAD *</pattern>
+	<template><srai>OPEN NOTEPAD</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU OPEN NOTEPAD</pattern>
+	<template><srai>OPEN NOTEPAD</srai></template>
+    </category>
+</aiml>

@@ -1,0 +1,127 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>TODAYS NEWS</pattern>
+        <template><think><set name ="assist">news</set></think></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME THE LATEST NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME TODAY'S HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME THE TOP HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME SOME BREAKING NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME SOME INTERNATIONAL NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME SOME WORLD NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME THE LATEST NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME TODAY'S HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME THE TOP HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME SOME WORLD NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL SOME INTERNATIONAL NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL SOME BREAKING NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME SOME NEW UPDATE IN THE WORLD</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE LATEST NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT ARE TODAY'S HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE TOP HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE BREAKING NEWS TODAY</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS HAPPENING IN THE WORLD</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE NEW UPDATE IN THE WORLD</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>IS THERE ANY BREAKING NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT ARE SOME TOP HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT ARE SOME LATEST WORLD NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>ANY NEW UPDATE IN THE NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>READ THE NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>PLAY THE LATEST NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU READ THE NEWS FOR ME</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>READ THE TOP NEWS HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU READ THE TOP NEWS HEADLINES</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU READ SOME INTERNATIONAL NEWS</pattern>
+        <template><srai>TODAYS NEWS</srai></template>
+    </category>
+</aiml>

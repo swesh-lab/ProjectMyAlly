@@ -1,0 +1,23 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>OPEN CALCULATOR</pattern>
+	<template><set name='assist'>open calculator</set></template>
+    </category>
+    <category>
+	<pattern>LAUNCH CALCULATOR</pattern>
+	<template><srai>OPEN CALCULATOR</srai></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLEASE OPEN CALCULATOR</pattern>
+	<template><srai>OPEN CALCULATOR</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU PLEASE OPEN CALCULATOR *</pattern>
+	<template><srai>OPEN CALCULATOR</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU OPEN CALCULATOR</pattern>
+	<template><srai>OPEN CALCULATOR</srai></template>
+    </category>
+</aiml>

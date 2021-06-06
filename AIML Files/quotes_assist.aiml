@@ -1,0 +1,19 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>MOTIVATE</pattern>
+        <template><think><set name ="assist">quote</set></think><star/></template>
+    </category>
+    <category>
+        <pattern># MOTIVATE *</pattern>
+        <template><srai>MOTIVATE</srai></template>
+    </category>
+    <category>
+        <pattern>* OUT OF THE BLUE</pattern>
+        <template><srai>MOTIVATE</srai></template>
+    </category>
+    <category>
+        <pattern>* FEELING BLUE</pattern>
+        <template><srai>MOTIVATE</srai></template>
+    </category>
+</aiml>

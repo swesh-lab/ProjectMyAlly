@@ -1,0 +1,11 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>SEARCH *</pattern>
+        <template><think><set name ="assist">search</set></think><star/></template>
+    </category>
+    <category>
+        <pattern>FIND *</pattern>
+        <template><think><set name ="assist">search</set></think><star/></template>
+    </category>
+</aiml>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Article Reader</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython_stdlib.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/css">
+        .content {
+            margin-top: 56px;
+        }
+
+    </script>
+</head>
+<body onload="brython()">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">MY ALLY: Testing Assistive Features and Prognostication</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/uploadPDF">PDF Reader</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/uploadWebArticle">Web Article Reader</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+        <div class="container text-center">
+            <form id="upload-form" action="{{ url_for('uploadWebArticle') }}" method="POST">
+                URL: <input type="url" id="url" name="url">
+                Save as: <input type="text" id="file-name" name="file-name">
+                <input type="submit" value="Submit">
+            </form>
+            <!--PDF Upload Status-->
+            {{ result }}
+            <br/>
+            <!--Audio Conversion Status-->
+            <!--{{folderPath}}{{fileName}}-->
+            <!--<input type="text" name="text" value="{{folderPath}}{{audioFile}}">-->
+            <hr/>
+
+            <!--<audio controls="controls" src="../static/PDF_Audio_Collections/{{audioFile}}"></audio>-->
+            {% for article in articleFileList %}
+            <div class="card border-light mb-3 text-center" style="max-width: 22rem; float: left; margin-right: 27px; margin-bottom: 27px;">
+              <div class="card-header">{{article}}</div>
+              <div class="card-body">
+                <p class="card-text"><audio controls="controls" src="../static/Articles_Audio_Collections/{{article}}"></audio></p>
+              </div>
+            </div>
+            {% endfor%}
+
+            <br/>
+        </div>
+    </div>
+
+</body>
+</html>

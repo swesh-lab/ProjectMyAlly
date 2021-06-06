@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY ALLY TEST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython_stdlib.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/css">
+        .content {
+            margin-top: 56px;
+        }
+    </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">MY ALLY: Testing Assistive Features and Prognostication</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link" href="/uploadPDF">PDF Reader</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="/uploadWebArticle">Web Article Reader</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="content">
+<div class="wrap">
+    <div class="left container">
+                <div class="row justify-content-center"></div>
+    </div>
+    <div class="right">
+
+        <div class="scroll">
+            <div id="chatbox">
+                <p class="allyText"><span> {{greet}}, {{ username }}</span></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text-center">
+
+                  <input id="textInput" type="text" name="msg" class="form-control btn-block input" placeholder="Type Your Message..." REQUIRED>
+
+            </div>
+        </div>
+        <script>
+                function getResponse() {
+                  var rawText = $("#textInput").val();
+                  var userHtml = '<p class="userInput"><span>' + rawText + "</span></p>";
+                  $("#textInput").val("");
+                  $("#chatbox").append(userHtml);
+
+                  $.get("/get", { msg: rawText }).done(function(data) {
+
+                        var allyHtml = '<pre class="allyText" id="format"><span>' + data + '</span></pre>';
+                        $("#chatbox").append(allyHtml);
+
+                  });
+                }
+                $("#textInput").keypress(function(e) {
+                  if (e.which == 13) {
+                    getResponse();
+                  }
+                });
+         </script>
+    </div>
+
+</div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

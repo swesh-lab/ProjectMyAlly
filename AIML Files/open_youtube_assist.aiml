@@ -1,0 +1,23 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>OPEN YOUTUBE</pattern>
+	<template><set name='assist'>open youtube</set></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLEASE OPEN YOUTUBE</pattern>
+	<template><srai>OPEN YOUTUBE</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU PLEASE OPEN YOUTUBE *</pattern>
+	<template><srai>OPEN YOUTUBE</srai>></template>
+    </category>
+    <category>
+	<pattern>CAN YOU OPEN YOUTUBE *</pattern>
+	<template><srai>OPEN YOUTUBE</srai>></template>
+    </category>
+    <category>
+	<pattern>LAUNCH YOUTUBE</pattern>
+	<template><srai>OPEN YOUTUBE</srai></template>
+    </category>
+</aiml>

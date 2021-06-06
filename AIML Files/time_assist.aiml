@@ -1,0 +1,27 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>WHAT IS THE TIME</pattern>
+	<template><think><set name='assist'>current time</set></think></template>
+    </category>
+    <category>
+	<pattern>WHAT IS THE CURRENT TIME</pattern>
+	<template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+    <category>
+	<pattern>WHAT TIME IS IT NOW</pattern>
+	<template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+    <category>
+	<pattern>WHAT * TIME</pattern>
+	<template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+    <category>
+	<pattern>CURRENT TIME</pattern>
+	<template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+    <category>
+	<pattern>TIME NOW</pattern>
+	<template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+</aiml>

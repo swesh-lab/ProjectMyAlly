@@ -1,0 +1,7 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>WIKIPEDIA *</pattern>
+        <template><think><set name ="assist">wikipedia</set></think><star/></template>
+    </category>
+</aiml>

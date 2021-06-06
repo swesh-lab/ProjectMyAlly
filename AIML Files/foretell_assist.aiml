@@ -1,0 +1,47 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>WHAT WILL HAPPEN TODAY</pattern>
+        <template><think><set name ="assist">foretell</set></think></template>
+    </category>
+    <category>
+        <pattern>WILL TODAY BE GOOD FOR ME</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>HOW WILL TODAY BE FOR ME</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>HOW WILL MY DAY GO TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>WILL SOMETHING GOOD HAPPEN TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>I WANT TO KNOW ABOUT TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>I WANT TO KNOW WHAT WILL HAPPEN TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME ABOUT TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME WHAT WILL HAPPEN TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME WHAT WILL HAPPEN TODAY</pattern>
+        <template><srai>WHAT WILL HAPPEN TODAY</srai></template>
+    </category>
+</aiml>

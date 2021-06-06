@@ -1,0 +1,19 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>_ MUSIC</pattern>
+	<template><set name='assist'>play music</set><star/></template>
+    </category>
+    <category>
+	<pattern>CAN YOU PLAY * MUSIC *</pattern>
+	<template><srai>PLAY MUSIC</srai></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLAY * MUSIC *</pattern>
+	<template><srai>PLAY MUSIC</srai></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLEASE PLAY * MUSIC *</pattern>
+	<template><srai>PLAY MUSIC</srai></template>
+    </category>
+</aiml>

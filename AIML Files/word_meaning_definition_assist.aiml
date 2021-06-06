@@ -1,0 +1,239 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>WHAT IS THE MEANING OF *</pattern>
+        <template>
+            <think><set name="assist">meaning</set></think>https://api.dictionaryapi.dev/api/v2/entries/en/<star/>
+        </template>
+    </category>
+    <category>
+        <pattern>MEANING *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS MEANT BY *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT MEANS BY *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT DOES IT MEAN BY *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>I WANT TO KNOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN I KNOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN I SEE THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU EXPLAIN THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU FIND THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SHOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SHOW ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU EXPLAIN THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU TELL ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU SHOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU SHOW ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU FIND THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>MAY I KNOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>EXPLAIN *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>EXPLAIN THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>TELL THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>SHOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>SHOW ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>FIND THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>DEFINE *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>HOW TO DEFINE *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>I WANT TO KNOW THE DEFINTION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN I KNOW THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN I SEE THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU EXPLAIN THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU FIND THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SHOW THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SHOW ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU EXPLAIN THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU TELL ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU SHOW THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU SHOW ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>COULD YOU FIND THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>MAY I KNOW THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>EXPLAIN THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>TELL THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>TELL ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>SHOW THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>SHOW ME THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>FIND THE DEFINITION OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS MEANT BY *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME THE MEANING OF *</pattern>
+        <template><srai>WHAT IS THE MEANING OF <star/></srai></template>
+    </category>
+    <category>
+        <pattern>I DO NOT KNOW THE MEANING OF *</pattern>
+        <template>Can I tell you?<think><set name="topic">not know</set><set name="word"><star/></set></think></template>
+    </category>
+    <topic name = "NOT KNOW">
+      <category>
+         <pattern>YES</pattern>
+         <template><srai>WHAT IS THE MEANING OF <get name="word"/></srai></template>
+      </category>
+    </topic>
+</aiml>

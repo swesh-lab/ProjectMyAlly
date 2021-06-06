@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Reader</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9/brython_stdlib.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/css">
+        .content {
+            margin-top: 56px;
+        }
+
+    </script>
+</head>
+<body onload="brython()">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">MY ALLY: Testing Assistive Features and Prognostication</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link" href="/uploadPDF">PDF Reader</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="/uploadWebArticle">Web Article Reader</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+    <div class="container text-center">
+
+        <form class="was-validated" id="upload-form" action="{{ url_for('uploadPDF') }}" method="POST" enctype="multipart/form-data">
+            <div class="custom-file">
+                <input id="file-extension" class="custom-file-input" type="file" name="file" accept="application/pdf" multiple>
+                <input type="submit" value="Upload">
+                <p id="msg"></p>
+            </div>
+        </form>
+        <!--PDF Upload Status-->
+            {{ result }}
+
+
+        <br/>
+        <!--Audio Conversion Status-->
+        <!--{{folderPath}}{{audioFile}}-->
+
+        <!--<input type="text" name="text" value="{{folderPath}}{{audioFile}}">-->
+        <hr/>
+
+        {% for audio in audioFileList %}
+        <!--{{audio}}-->
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<audio controls="controls" src="../static/PDF_Audio_Collections/{{audio}}"></audio>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+
+        <div class="card border-light mb-3 text-center" style="max-width: 22rem; float: left; margin-right: 27px; margin-bottom: 27px;">
+          <div class="card-header">{{audio}}</div>
+          <div class="card-body">
+            <p class="card-text"><audio controls="controls" src="../static/PDF_Audio_Collections/{{audio}}"></audio></p>
+          </div>
+        </div>
+
+
+        {% endfor%}
+        <br/>
+    </div>
+</div>
+
+</body>
+
+<!-- script to support only PDF file, matching extension .PDF-->
+<script>
+    $("#file-extension").change(function(){
+        var input = document.getElementById('file-extension');
+        for (var i=0; i<input.files.length; i++) {
+            var extension= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+            if ((extension == 'pdf')) {
+                $("#msg").text("Your file is accepted! Now you can upload the file.")
+            }
+            else {
+                $("#msg").text("It is an invalid file. I can only read PDF files for now.")
+                document.getElementById("file-extension").value ="";
+            }
+        }
+    } );
+</script>
+</html>

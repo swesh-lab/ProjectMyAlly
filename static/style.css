@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+    background: #776889;
+    font-family: "Nunito";
+}
+
+#format {
+    overflow: hidden;
+	white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#userInput {
+    width: 100%;
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.userInput {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    text-align: right;
+    line-height: 30px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    height: auto;
+}
+
+.userInput span {
+    background-color: #222222;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.allyText {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    text-align: left;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.allyText span {
+    background-color: #76322F;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.left {
+    flex-basis: 50%;
+    width: 50%;
+	height: 92vh;
+	vertical-align: middle;
+	background-image: url('https://i.postimg.cc/HxmLJnMV/model.gif');
+	background-color: #776889;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.right {
+	color: #7c7c7d;
+	background-image: url('https://i.postimg.cc/t4mhZYhq/shine.gif');
+	background-size: cover;
+	width: 50%;
+ 	flex-basis: 50%;
+ 	height: 590px;
+ 	vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.scroll {
+	overflow: auto;
+    min-width: 200px;
+    height: 87vh;
+
+}
+
+.footer{
+    bottom: 0;
+}
+
+.border {
+    border: 2px solid white;
+}

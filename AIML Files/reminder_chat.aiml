@@ -1,0 +1,59 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+        <pattern>SET REMINDER</pattern>
+        <template><think><set name ="assist">reminder</set></think></template>
+    </category>
+    <category>
+        <pattern>SET AN ALARM FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SET AN ALARM</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SET AN ALARM FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>WILL YOU SET AN ALARM FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>SET A REMINDER</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>SET A REMINDER FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>CAN YOU SET A REMINDER FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>WILL YOU SET A REMINDER FOR ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>I NEED TO SET AN ALARM</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>I NEED TO SET A REMINDER</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>WAKE ME UP</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>REMIND ME</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+    <category>
+        <pattern>SET AN ALARM</pattern>
+        <template><srai>SET REMINDER</srai></template>
+    </category>
+</aiml>

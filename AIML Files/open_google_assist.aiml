@@ -1,0 +1,23 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+	<pattern>OPEN GOOGLE</pattern>
+	<template><set name='assist'>open google</set></template>
+    </category>
+    <category>
+	<pattern>LAUNCH GOOGLE</pattern>
+	<template><srai>OPEN GOOGLE</srai></template>
+    </category>
+    <category>
+	<pattern>COULD YOU PLEASE OPEN GOOGLE</pattern>
+	<template><srai>OPEN GOOGLE</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU PLEASE OPEN GOOGLE *</pattern>
+	<template><srai>OPEN GOOGLE</srai></template>
+    </category>
+    <category>
+	<pattern>CAN YOU OPEN GOOGLE</pattern>
+	<template><srai>OPEN GOOGLE</srai></template>
+    </category>
+</aiml>
